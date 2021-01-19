@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Нина Чернобровкина](https://up.htmlacademy.ru/htmlcss/30/user/1709289).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
 
