@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto"),
+  url("../fonts/roboto.woff2") format("woff2"),
+  url("../fonts/roboto.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto Medium"),
+  url("../fonts/robotomedium.woff2") format("woff2"),
+  url("../fonts/robotomedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto Bold"),
+  url("../fonts/robotobold.woff2") format("woff2"),
+  url("../fonts/robotobold.woff") format("woff");
+}
+
+:root {
+  --basic-color: #283136;
+  --address-color: #666666;
+  --accent-color: #000000;
+  --friends-color: #444444;
+  --button-color: #FFFFFF;
+  --error-color: #E74246;
+  --catalog-hover-color: #FB565A;
+
+  --header-bg-color: #EEEEEE;
+  --button-bg-color: #FB565A;
+  --button-hover-bg-color: #E74246;
+  --button-active-bg-color: #D7373B;
+  --button-bg-green: #00CA74;
+  --button-hover-bg-green: #00BC6C;
+  --button-active-bg-green: #00AA62;
+  --button-bg-yellow: #EFC84A;
+  --button-hover-bg-yellow: #EAB534;
+  --button-active-bg-yellow: #E5A722;
+
+  --social-bg: #E1E1E1;
+  --sociai-hover-bg: #E74246;
+  --sociai-active-bg: #D7373B;
+
+  --pagination-bg: #EEEEEE;
+  --pagination-hover-bg: #DFDFDF;
+  --pagination-active-bg: #D5D5D5;
+
+  --catalog-top-line-bg: #4D4D4D;
+}
+
+.page {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-color);
+}
+
+.main-header {
+  background-color: var(--header-bg-color);
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--accent-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.features {
+  background-color: var(--header-bg-color);
+}
+.slide {
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.slide:first-child {
+  background-image: url("../img/slide1-bg.png");
+}
+.slide:nth-child(2) {
+  background-image: url("../img/slide2-bg.png");
+}
+.slide:nth-child(3) {
+  background-image: url("../img/slide3-bg.png");
+}
+
+.slide-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--accent-color);
+}
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.services-item-title {
+  color: var(--accent-color);
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-green {
+  background-color: var(--button-bg-green);
+}
+
+.btn-yellow {
+  background-color: var(--button-bg-yellow)
+}
+
+.about-title {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-list-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-stats-title {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-stats-prop {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.about-stats-value {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--accent-color);
+}
+
+.about-stats-percent {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.contacs-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--accent-color);
+}
+
+.contacts-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--address-color);
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: var(--address-color);
+}
+
+.socials-link {
+  font-size: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.socials-item {
+  background-color: var(--social-bg);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.socials-vk {
+  background-image: url("../img/vk-icon.svg");
+}
+.socials-insta {
+  background-image: url("../img/insta-icon.svg");
+}
+.socials-fb {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.socials-promo-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--accent-color);
+}
+
+.socials-promo-desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--friends-color);
+}
+
