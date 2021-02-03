@@ -61,15 +61,55 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.center {
+  max-width: 1157px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .page {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-color);
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
 }
 
 .main-header {
   background-color: var(--header-bg-color);
+}
+.main-nav {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+}
+.top-menu {
+  display: flex;
+  justify-self: center;
+  list-style: none;
+}
+.top-menu-item {
+  margin: 0 45px;
 }
 .main-nav-link {
   text-transform: uppercase;
@@ -82,9 +122,18 @@ a {
 .features {
   background-color: var(--header-bg-color);
 }
+
+.slider {
+  list-style: none;
+}
 .slide {
   background-repeat: no-repeat;
   background-position: right 0;
+  height: 431px;
+  display: none;
+}
+.slide.active {
+  display: block;
 }
 .slide:first-child {
   background-image: url("../img/slide1-bg.png");
@@ -100,6 +149,7 @@ a {
   font-size: 55px;
   line-height: 55px;
   color: var(--accent-color);
+  margin: 0;
 }
 
 .btn {
@@ -123,6 +173,14 @@ a {
   outline: none;
 }
 
+.services {
+  margin-top: 80px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
 .services-item-title {
   color: var(--accent-color);
   font-size: 24px;
@@ -151,6 +209,10 @@ a {
   background-color: var(--button-active-bg-yellow);
 }
 
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
 .about-title {
   color: var(--accent-color);
   font-weight: 500;
@@ -166,11 +228,16 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .about-stats-prop {
   font-size: 16px;
   line-height: 18px;
 }
 .about-stats-value {
+  grid-row: 1 / 2;
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
@@ -179,6 +246,15 @@ a {
 .about-stats-percent {
   font-size: 26px;
   line-height: 40px;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+.partners-item {
+  text-align: center;
 }
 
 .contacs-title {
@@ -196,6 +272,18 @@ a {
   color: var(--address-color);
 }
 
+.socials-wrapper {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+.socials-list {
+  display: flex;
+  list-style: none;
+  width: 260px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 .socials-link {
   font-size: 0;
   display: block;
