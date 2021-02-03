@@ -73,7 +73,7 @@ a {
 }
 
 .center {
-  max-width: 1157px;
+  max-width: 1160px;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
@@ -179,6 +179,7 @@ a {
 .services-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
   list-style: none;
 }
 .services-item-title {
