@@ -44,6 +44,7 @@
   --button-bg-yellow: #EFC84A;
   --button-hover-bg-yellow: #EAB534;
   --button-active-bg-yellow: #E5A722;
+  --white-bg: #FFF;
 
   --social-bg: #E1E1E1;
   --sociai-hover-bg: #E74246;
@@ -258,6 +259,27 @@ a {
   text-align: center;
 }
 
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1160px 1fr;
+}
+.map-wrapper {
+  grid-area: 1 / 1 / 2 / -1;
+
+  height: 416px;
+}
+.map-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.contacts-wrapper {
+  grid-area: 1 / 2 / 2 / 3;
+
+  width: 319px;
+  background-color: var(--white-bg);
+
+  align-self: center;
+}
 .contacs-title {
   font-weight: bold;
   font-size: 18px;
