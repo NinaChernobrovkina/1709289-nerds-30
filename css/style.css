@@ -1,3 +1,7 @@
+/*
+ПОДКЛЮЧЕНИЕ ШРИФТОВ
+ */
+
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -22,6 +26,10 @@
   url("../fonts/robotobold.woff2") format("woff2"),
   url("../fonts/robotobold.woff") format("woff");
 }
+
+/*
+ЦВЕТ
+ */
 
 :root {
   --basic-color: #283136;
@@ -58,6 +66,10 @@
   --catalog-top-line-opacity-bg: rgba(77,77,77,0.12);
 }
 
+/*
+ОБЩИЕ ПРАВИЛА
+ */
+
 a {
   text-decoration: none;
 }
@@ -80,6 +92,66 @@ a {
   padding-right: 0;
 }
 
+/*
+КНОПКА
+ */
+
+.btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+.btn:active {
+  background-color: var(--button-active-bg-color);
+  color: var(--button-opacity-color);
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn-green {
+  background-color: var(--button-bg-green);
+}
+.btn-green:hover {
+  background-color: var(--button-hover-bg-green);
+}
+.btn-green:active {
+  background-color: var(--button-active-bg-green);
+}
+
+.btn-yellow {
+  background-color: var(--button-bg-yellow)
+}
+.btn-yellow:hover {
+  background-color: var(--button-hover-bg-yellow);
+}
+.btn-yellow:active {
+  background-color: var(--button-active-bg-yellow);
+}
+.btn-grey {
+  background-color: var(--pagination-bg);
+  color: var(--accent-color);
+}
+.btn-grey:hover {
+  background-color: var(--pagination-hover-bg);
+}
+.btn-grey:active {
+  background-color: var(--pagination-active-bg);
+  color: var(--accent-opacity-color);
+}
+
+/*
+HTML and BODY
+ */
+
 .page {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -96,6 +168,10 @@ a {
     1fr
     min-content;
 }
+
+/*
+ХЕДЕР
+ */
 
 .main-header {
   background-color: var(--header-bg-color);
@@ -119,6 +195,10 @@ a {
   color: var(--accent-color);
   font-weight: 500;
 }
+
+/*
+СЛАЙДЕР НА ГЛАВНОЙ
+ */
 
 .features {
   background-color: var(--header-bg-color);
@@ -153,26 +233,9 @@ a {
   margin: 0;
 }
 
-.btn {
-  background-color: var(--button-bg-color);
-  color: var(--button-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-}
-.btn:hover {
-  background-color: var(--button-hover-bg-color);
-}
-.btn:active {
-  background-color: var(--button-active-bg-color);
-  color: var(--button-opacity-color);
-}
-.btn:focus {
-  outline: none;
-}
+/*
+БЛОК ПОД СЛАЙДАМИ
+ */
 
 .services {
   margin-top: 80px;
@@ -191,25 +254,9 @@ a {
   font-weight: bold;
 }
 
-.btn-green {
-  background-color: var(--button-bg-green);
-}
-.btn-green:hover {
-  background-color: var(--button-hover-bg-green);
-}
-.btn-green:active {
-  background-color: var(--button-active-bg-green);
-}
-
-.btn-yellow {
-  background-color: var(--button-bg-yellow)
-}
-.btn-yellow:hover {
-  background-color: var(--button-hover-bg-yellow);
-}
-.btn-yellow:active {
-  background-color: var(--button-active-bg-yellow);
-}
+/*
+БЛОК О КОМПАНИИ
+ */
 
 .about-wrapper {
   display: grid;
@@ -250,6 +297,10 @@ a {
   line-height: 40px;
 }
 
+/*
+ПАРТНЁРЫ
+ */
+
 .partners-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -258,6 +309,10 @@ a {
 .partners-item {
   text-align: center;
 }
+
+/*
+ФУТЕР
+ */
 
 .contacts {
   display: grid;
@@ -294,6 +349,10 @@ a {
 .contacts-phone {
   color: var(--address-color);
 }
+
+/*
+СОЦ.СЕТИ
+ */
 
 .socials-wrapper {
   display: grid;
@@ -349,7 +408,7 @@ a {
 }
 
 /*
-Страница каталога
+СТРАНИЦА КАТАЛОГА
 */
 
 .page-title-wrapper {
@@ -361,6 +420,10 @@ a {
   line-height: 55px;
   color: var(--accent-color);
 }
+
+/*
+ФИЛЬТР
+ */
 
 .filter-options-title {
   font-weight: bold;
@@ -390,17 +453,9 @@ a {
   color: var(--basic-color);
 }
 
-.btn-grey {
-  background-color: var(--pagination-bg);
-  color: var(--accent-color);
-}
-.btn-grey:hover {
-  background-color: var(--pagination-hover-bg);
-}
-.btn-grey:active {
-  background-color: var(--pagination-active-bg);
-  color: var(--accent-opacity-color);
-}
+/*
+БЛОК СОРТИРОВКИ НАД КАРТОЧКАМИ
+ */
 
 .sorting-text {
   font-weight: bold;
@@ -424,17 +479,19 @@ a {
   opacity: 1;
 }
 
+/*
+КАРТОЧКИ ТОВАРОВ
+ */
+
 .product-card {
   background-color: var(--catalog-top-line-opacity-bg);
 }
 .product-card:hover {
   background-color: var(--catalog-top-line-bg);
 }
-
 .product-info {
   background-color: var(--header-bg-color);
 }
-
 .product-link {
   color: var(--accent-color);
   font-size: 18px;
@@ -447,10 +504,13 @@ a {
 .product-link:active {
   color: var(--accent-opacity-color);
 }
-
 .product-desc {
   color: var(--address-color);
 }
+
+/*
+ПОСТРАНИЧНАЯ НАВИГАЦИЯ
+ */
 
 .pagination-link {
   background-color: var(--header-bg-color);
