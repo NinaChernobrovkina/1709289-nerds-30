@@ -419,12 +419,24 @@ HTML and BODY
   font-size: 55px;
   line-height: 55px;
   color: var(--accent-color);
+  text-align: center;
+}
+
+/*
+ОСНОВНАЯ СЕТКА СТРАНИЦЫ КАТАЛОГА
+ */
+.catalog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
 }
 
 /*
 ФИЛЬТР
  */
-
+.filter-group {
+  border: none;
+}
 .filter-options-title {
   font-weight: bold;
   font-size: 18px;
@@ -441,6 +453,7 @@ HTML and BODY
   background-color: var(--header-bg-color);
   width: 260px;
   height: 80px;
+  margin-bottom: 14px;
 }
 .filter-input {
   background-color: var(--header-bg-color);
@@ -451,8 +464,12 @@ HTML and BODY
 .filter-options {
   line-height: 19px;
   color: var(--basic-color);
+  list-style: none;
 }
 
+.catalog {
+  grid-column: 2 / 4;
+}
 /*
 БЛОК СОРТИРОВКИ НАД КАРТОЧКАМИ
  */
@@ -482,7 +499,16 @@ HTML and BODY
 /*
 КАРТОЧКИ ТОВАРОВ
  */
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .product-card {
   background-color: var(--catalog-top-line-opacity-bg);
 }
@@ -491,6 +517,7 @@ HTML and BODY
 }
 .product-info {
   background-color: var(--header-bg-color);
+  display: none;
 }
 .product-link {
   color: var(--accent-color);
