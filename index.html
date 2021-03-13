@@ -46,10 +46,15 @@
         <a class="btn" href="#">Узнать больше</a>
       </li>
     </ul>
+    <div class="slider-controls">
+      <button class="active" type="button" aria-label="Первый слайд"></button>
+      <button type="button" aria-label="Второй слайд"></button>
+      <button type="button" aria-label="Третий слайд"></button>
+    </div>
   </section>
   <section class="services">
     <h2 class="visually-hidden">Услуги</h2>
-    <ul class="services-list center">
+    <ul class="services-list center bottom-border">
       <li class="services-item">
         <img class="services-item-img" src="img/web-sites.jpg" width="300" height="146" alt="Ноутбук">
         <h3 class="services-item-title">Веб-сайты</h3>
@@ -73,7 +78,7 @@
 
   <section class="about">
     <h2 class="visually-hidden">О нас</h2>
-    <div class="about-wrapper center">
+    <div class="about-wrapper center bottom-border">
       <div>
         <p class="about-title">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
         <p class="about-desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше
@@ -103,7 +108,7 @@
   </section>
   <section class="partners">
     <h2 class="visually-hidden">Партнеры</h2>
-    <ul class="partners-list center">
+    <ul class="partners-list center bottom-border">
       <li class="partners-item">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/html.png" width="199" height="68" alt="Академия">
@@ -128,7 +133,7 @@
       <img src="img/map.jpg" width="1440" height="416" alt="Карта">
     </div>
     <div class="contacts-wrapper">
-      <p class="contacs-title">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
       <p class="contacts-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
       <p class="contacts-text">тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
       <a class="btn" href="#">Напишите нам</a>
@@ -155,5 +160,25 @@
     </div>
   </section>
 </footer>
+<section class="modal modal-feedback">
+  <h2 class="modal-title">Напишите нам</h2>
+  <form>
+    <div class="feedback-form-row">
+      <div>
+        <label class="feedback-form-label" for="feedback-form-name">Ваше имя:</label>
+        <input class="feedback-form-input" id="feedback-form-name" name="feedback-form-name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label class="feedback-form-label" for="feedback-form-email">Ваш email:</label>
+        <input class="feedback-form-input" id="feedback-form-email" type="email" name="feedback-form-email" placeholder="email@example.com">
+      </div>
+    </div>
+    <label class="feedback-form-label" for="feedback-form-text">Текст письма:</label>
+    <textarea class="feedback-form-textarea" id="feedback-form-text" name="feedback-form-text" placeholder="В свободной форме"></textarea>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
+
 </body>
 </html>
