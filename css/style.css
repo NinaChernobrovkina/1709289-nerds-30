@@ -518,12 +518,17 @@ HTML and BODY
 }
 .map-wrapper {
   grid-area: 1 / 1 / 2 / -1;
-
+  position: relative;
   height: 416px;
 }
-.map-wrapper img {
+.map {
   width: 100%;
   height: 100%;
+}
+.map-marker {
+  position: absolute;
+  top: 86px;
+  left: 57%;
 }
 .contacts-wrapper {
   grid-area: 1 / 2 / 2 / 3;
@@ -534,6 +539,7 @@ HTML and BODY
   background-color: var(--white-bg);
 
   align-self: center;
+  z-index: 1;
 }
 .contacts-title {
   font-weight: bold;
@@ -957,7 +963,19 @@ HTML and BODY
   line-height: 18px;
   margin: 12px 0 32px;
 }
-
+.card-topline {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  display: flex;
+}
+.card-topline-circle {
+  width: 14px;
+  height: 14px;
+  background-color: var(--button-color);
+  margin-right: 9px;
+  border-radius: 50%;
+}
 /*
 ПОСТРАНИЧНАЯ НАВИГАЦИЯ
  */
